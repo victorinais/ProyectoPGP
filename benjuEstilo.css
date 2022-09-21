@@ -6,25 +6,30 @@ body {
 body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
-	background: #f5f5f5;
-	color: #4d4d4d;
+	color: #ffffff;
 	min-width: 230px;
-	max-width: 550px;
+	max-width: 625px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-weight: 300;
+    background-image: url("fondo.png");
+}
+
+h1{
+    text-align: center;
+    color: #535353;
+    font-size: 40px;
+    margin-block-start: 1.6em;
+    margin-block-end: -1.9em;
+    margin-inline-start: -270px;
+    margin-inline-end: -270px;
 }
 
 .table-title {
     display: block;
     text-align: center;
-    font-size: 2em;
-    color: gray;
-    margin-block-start: 1.67em;
-    margin-block-end: -2.33em;
-    margin-inline-start: -270px;
-    margin-inline-end: -270px;
+    color: #535353;
     font-weight: bold;
     text-rendering: optimizeLegibility
 }
@@ -36,10 +41,10 @@ table{
 
 .table-scroll{
 
-    background: #fff;
+    background: #24303c;
     margin: 130px 0 40px 0;
     position: relative;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px 0 black, 0 25px 50px black;
 
 }
 
@@ -49,8 +54,8 @@ th {
     vertical-align: middle;
     margin: 0;
     padding: 16px 16px 16px 23px;
-    border-right: 1px solid blue;
-    background: blue;
+    border-right: 1px solid  #24303c;
+    border-bottom: 3px solid #1f53c5;
     box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
 }
 
@@ -58,15 +63,77 @@ th {
     height: auto;
     border-collapse: collapse;
     margin: auto;
-    max-width: 600px;
-    padding: 10px;
+    max-width: 625px;
+    padding: 5px;
     width: 100%;
     animation: float 5s infinite;
+    box-shadow: 0 1px 1px #0f0f0f, 0 8px 0 -3px #24303c, 
+    0 9px 1px -3px #0f0f0f, 
+    0 16px 0 -6px #24303c, 0 17px 2px -6px rgb(0 0 0 / 20%);
     
 }
 
 .table-hover td{
     position: relative;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #1f53c5;
+    text-align: center;
+    height: 60px;
+}
+
+.table-hover td button{
+    position: relative;
+    background-color: #1f53c5;
+    color: #ffffff;
+    border-color: #1f53c5;
+    text-align: center;
+    height: 35px;
+}
+
+footer{
+    color: #000000;
     text-align: center;
 }
+
+.formulario .guardar{
+    background-color: #1f53c5;
+    font-size: large;
+    color: #ffffff;
+    border-color: #1f53c5;
+    height: 35px;
+    width: 100%;    
+}
+
+.formulario {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    border-collapse: collapse;
+    max-width: 625px;
+    padding: 10px;
+    width: 100%;
+    animation: float 5s infinite;
+    background: #24303c;
+    margin: 240px 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 4px 0 black, 0 25px 50px black;
+}
+  
+.formulario .input-info {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;  
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+.formulario input {
+    color: #ffffff;
+    border: 1px solid #1f53c5;
+    background: #24303c;
+    padding: 5px;
+    width: 70%
+}
+  
