@@ -1,0 +1,44 @@
+*{
+    margin: 2%;
+    
+}
+body {
+    background-image: url("fondo.png");
+}
+
+h1{ 
+    color: rgb(62, 54, 54); 
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.formulario {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+}
+
